@@ -36,7 +36,7 @@ RUN groupadd -g 70 dev && \
     unzip protoc.zip -d protoc && \
     mv ./protoc/bin/protoc /usr/local/bin && \
     mv ./protoc/include/google /usr/local/include && \
-    curl -Lo go.tar.gz https://dl.google.com/go/go1.9.4.linux-amd64.tar.gz && \
+    curl -Lo go.tar.gz https://dl.google.com/go/go1.10.linux-amd64.tar.gz && \
     tar -C /usr/local -xzf go.tar.gz && \
     cd /usr/local/bin &&\
     chmod +x ./minikube ./kubectl ./protoc
